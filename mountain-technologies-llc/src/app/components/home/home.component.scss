@@ -1,0 +1,247 @@
+h1 {
+	font-size: calc(1.475rem + 2.7vw);
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+h2 {
+	border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+.banner-content {
+	background-size: auto, cover;
+	background-position: 50%,50%;
+	margin-bottom: -6.5em;
+}
+
+.footer-content {
+	background-size: auto, cover;
+	background-position: 50%,50%;
+	margin-top: -6.5em;
+
+	.inner {
+		text-align: left;
+	}
+}
+
+.content-area {
+	section {
+		position: relative;
+		margin: 6.5em 0;
+		text-align: right;
+
+		.inner {
+			margin: 0 auto;
+			padding: 2rem 1rem;
+			position: relative;
+
+			.image-wrapper {
+				float: right;
+				margin: 0 0 1rem 2rem;
+
+				img {
+					border-radius: 100%;
+					width: 12rem;
+				}
+			}
+		}
+
+		@media (min-width: 62rem) {
+			.inner {
+				width: 40rem;
+
+				.logo {
+					max-width: 5rem;
+				}
+			}
+		}
+
+		@media (min-width: 75rem) {
+			.inner {
+				width: 50rem;
+				
+				.logo {
+					max-width: 6rem;
+				}
+			}
+		}
+
+		&#banner {
+			.inner {
+				margin-top: 1rem;
+				padding-bottom: 1rem;
+
+				h1.display-4 {
+					border-bottom: 2px solid hsl(198, 0%, 55%);
+				}
+
+				h2 {
+					border-bottom: none;
+				}
+			
+				.logo {
+					max-width: 4rem;
+				}
+			}
+
+			@media (min-width: 62rem) {
+				.inner {	
+					margin-top: 4rem;
+					padding-bottom: 4rem;
+
+					.logo {
+						max-width: 5rem;
+					}
+				}
+			}
+	
+			@media (min-width: 75rem) {
+				.inner {					
+					margin-top: 5rem;
+					padding-bottom: 5rem;
+
+					.logo {
+						max-width: 6rem;
+					}
+				}
+			}
+		}
+
+		&#contact {
+			margin: 6.5em 0 0 0;
+
+			.inner {
+				.content {
+					margin-bottom: 0;
+	
+					.contact {
+						list-style: none;
+					}
+				}
+			}
+
+			&:after {
+				bottom: 0;
+			}
+		}
+
+		&#footer {
+			margin: 0;
+
+			.inner {
+				padding-top: 0;
+
+				.content {
+					margin: 0;
+	
+					.copyright {
+						border-top: 1px solid rgb(155, 155, 155);
+						list-style: none;
+						padding: 2em 0 0 0;
+						width: 100%;
+						display: inline-block;
+						font-size: .9em;
+						line-height: 1;
+					}
+				}
+			}
+			
+
+			&:after {
+				bottom: 0;
+			}
+		}
+
+		&:after {
+			transform: scaleY(-1);
+			bottom: -6.5em;
+			left: 0;
+		}
+
+		&:before {
+			left: 0;
+			top: -6.5em;
+		}
+
+		&:before,
+		&:after {
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			content: "";
+			display: block;
+			height: 6.5em;
+			position: absolute;
+			width: 100%;
+			box-sizing: inherit;
+		}
+
+		&.alt {
+			.inner {
+				text-align: left;
+
+				.image-wrapper {
+					float: left;
+					margin: 0 2rem 1rem 0;
+	
+					img {
+						border-radius: 100%;
+						width: 12rem;
+					}
+				}
+			}
+
+			&:after {
+				transform: scaleY(-1) scaleX(-1);
+			}
+		
+			&:before {
+				transform: scaleX(-1);
+			}
+		}
+	}
+
+	.content {
+		margin: 1.2rem 0;
+	}
+
+	#section-one {
+		background-color: white;
+		margin-top: 6.5em;
+
+		&:after,
+		&:before {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:white%3B' /%3E%3C/svg%3E");
+			box-shadow: inset 0 -1px 0 0 white, 0 1px 0 0 white;
+		}
+	}
+
+	#section-two {
+		background-color: lightblue;
+
+		&:after,
+		&:before {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:lightblue%3B' /%3E%3C/svg%3E");
+			box-shadow: inset 0 -1px 0 0 lightblue, 0 1px 0 0 lightblue;
+		}
+	}
+
+	#section-three {
+		background-color: lightskyblue;
+
+		&:after,
+		&:before {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:lightskyblue%3B' /%3E%3C/svg%3E");
+			box-shadow: inset 0 -1px 0 0 lightskyblue, 0 1px 0 0 lightskyblue;
+		}
+	}
+}
+
+@media (min-width: 48rem) {
+	.inner {
+		width: 35rem;
+
+		.logo {
+			max-width: 4.5rem;
+		}
+	}
+}
